@@ -10,7 +10,7 @@
   --portfolio-border-color: #eeeeee;
   --logo-black-color: #000000;
   --clients-color: #afb1b8;
-  --transition-duration: 5000ms;
+  --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -414,7 +414,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
   transition: color var(--transition-duration) var(--transition-timing-function),
-      border var(--transition-duration) var(--transition-timing-function);
+    border var(--transition-duration) var(--transition-timing-function);
 }
 
 .client-icon {
@@ -573,7 +573,8 @@ img {
 .portfolio-link {
   display: inline-block;
 
-  transition: box-shadow var(--transition-duration) var(--transition-timing-function);
+  transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .portfolio-link:hover,
@@ -642,25 +643,26 @@ img {
   border: 1px solid #000000;
 
   opacity: 1;
-  transition: opacity var(--transition-duration) var(--transition-timing-function);
+  transition: opacity var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .backdrop.is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
-transform: translate(-50%, -50%) scale(0.2);
-transition: transform var(--transition-duration) var(--transition-timing-function); }
+  transform: translate(-50%, -50%) scale(0.2);
+}
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
 
   min-width: 528px;
   min-height: 581px;
